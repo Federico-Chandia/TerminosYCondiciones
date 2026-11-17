@@ -1,87 +1,180 @@
-<!doctype html>
-<html lang="es-AR">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Política de privacidad y términos de uso de Empprende.">
-    <title>Empprende | Documentos legales</title>
-    <style>
-      :root {
-        color-scheme: light;
-        --ink: #202b34;
-        --muted: #596a75;
-        --blue: #185b72;
-        --green: #2f725b;
-        --line: #d7e0e3;
-        --paper: #ffffff;
-        --canvas: #eef3f1;
-      }
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Política de Privacidad de Emprende. Información sobre el uso, almacenamiento y protección de datos.">
+  <title>Política de Privacidad | Emprende</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7f5;
+      --surface: #ffffff;
+      --text: #202820;
+      --muted: #647067;
+      --accent: #287a55;
+      --border: #e2e9e3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 40px 18px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+    main {
+      width: min(100%, 860px);
+      margin: 0 auto;
+      padding: clamp(24px, 5vw, 52px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 12px 36px rgba(28, 54, 35, .06);
+    }
+    .brand {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: .9rem;
+      font-weight: 750;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 5vw, 2.7rem);
+      line-height: 1.15;
+      letter-spacing: -.04em;
+    }
+    .updated { margin: 0 0 30px; color: var(--muted); font-size: .94rem; }
+    h2 {
+      margin: 34px 0 10px;
+      color: #245d42;
+      font-size: 1.25rem;
+      line-height: 1.35;
+    }
+    h3 { margin: 20px 0 8px; font-size: 1.04rem; }
+    p { margin: 10px 0; }
+    ul { padding-left: 22px; }
+    li { margin: 5px 0; }
+    a { color: var(--accent); overflow-wrap: anywhere; }
+    .contact {
+      margin-top: 18px;
+      padding: 18px 20px;
+      background: #f0f7f2;
+      border: 1px solid #dcebe0;
+      border-radius: 12px;
+    }
+    footer {
+      margin-top: 38px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: .9rem;
+    }
+    @media (max-width: 520px) {
+      body { padding: 14px 10px; }
+      main { border-radius: 13px; padding: 24px 19px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="brand">Emprende</span>
+    <h1>Política de Privacidad</h1>
+    <p class="updated"><strong>Última actualización:</strong> 17 de noviembre de 2026</p>
 
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        background: var(--canvas);
-        color: var(--ink);
-        font: 16px/1.65 Georgia, "Times New Roman", serif;
-      }
-      header {
-        padding: 48px max(24px, calc((100% - 860px) / 2));
-        background: #d9e8e4;
-        border-bottom: 4px solid var(--green);
-      }
-      header p, nav, .meta, footer { font-family: Arial, Helvetica, sans-serif; }
-      header p { margin: 8px 0 0; color: var(--muted); }
-      h1, h2, h3 { line-height: 1.2; }
-      h1 { margin: 0; font-size: 38px; }
-      nav {
-        display: flex;
-        gap: 18px;
-        flex-wrap: wrap;
-        padding: 18px max(24px, calc((100% - 860px) / 2));
-        background: var(--paper);
-        border-bottom: 1px solid var(--line);
-      }
-      a { color: var(--blue); }
-      main { max-width: 860px; margin: 28px auto; padding: 0 20px; }
-      article {
-        margin: 0 0 24px;
-        padding: 32px clamp(22px, 5vw, 52px);
-        background: var(--paper);
-        border: 1px solid var(--line);
-        border-radius: 6px;
-      }
-      article > h2 { margin-top: 0; color: var(--blue); font-size: 28px; }
-      h3 { margin: 26px 0 8px; font-size: 19px; }
-      .meta { color: var(--muted); font-size: 14px; }
-      nav a[aria-current="page"] { font-weight: bold; text-decoration: none; color: var(--ink); }
-      footer { padding: 24px; color: var(--muted); text-align: center; }
+    <p>La presente Política de Privacidad describe cómo <strong>Emprende</strong> (en adelante, “la Aplicación”) trata la información de sus usuarios. Emprende es una aplicación destinada a ayudar a emprendedores y pequeños comerciantes a organizar productos, calcular costos de producción y estimar precios de venta.</p>
+    <p>Este documento explica qué información se maneja, con qué finalidad y qué opciones tienen los usuarios respecto de sus datos.</p>
 
-      @media (max-width: 560px) {
-        header { padding-top: 34px; padding-bottom: 34px; }
-        h1 { font-size: 32px; }
-        article { padding: 24px 20px; }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Empprende</h1>
-      <p>Privacidad y condiciones de uso</p>
-    </header>
-    <nav aria-label="Documentos">
-      <a href="/privacidad">Política de privacidad</a>
-      <a href="/terminos">Términos y condiciones</a>
-      <a href="mailto:fedelchandia@gmail.com">Contacto</a>
-    </nav>
-    <main>
-      <article>
-        <h2>Documentos legales</h2>
-        <ul>
-          <li><a href="/privacidad">Política de privacidad</a></li>
-          <li><a href="/terminos">Términos y condiciones</a></li>
-        </ul>
-      </article>
-    </main>
-    <footer>Empprende · Argentina · <a href="mailto:fedelchandia@gmail.com">Contacto</a></footer>
-  </body>
+    <h2>1. Responsable de la aplicación</h2>
+    <ul>
+      <li><strong>Aplicación:</strong> Emprende.</li>
+      <li><strong>Responsable:</strong> Federico Chandía.</li>
+      <li><strong>País:</strong> República Argentina.</li>
+      <li><strong>Correo de contacto:</strong> <a href="mailto:fedelchandia@gmail.com">fedelchandia@gmail.com</a>.</li>
+    </ul>
+
+    <h2>2. Información que se maneja</h2>
+    <h3>2.1. Datos de registro y autenticación</h3>
+    <p>Para crear una cuenta y acceder a la Aplicación, el usuario proporciona una dirección de correo electrónico y una contraseña. Estos datos se utilizan para registrar la cuenta, autenticar al usuario y permitir el acceso.</p>
+
+    <h3>2.2. Información comercial ingresada por el usuario</h3>
+    <p>El usuario puede ingresar información relacionada con su actividad comercial, como por ejemplo:</p>
+    <ul>
+      <li>Productos, materias primas e ingredientes.</li>
+      <li>Recetas, cantidades y unidades de medida.</li>
+      <li>Costos de producción y precios de compra o venta.</li>
+      <li>Información sobre proveedores.</li>
+      <li>Otros datos que el usuario incorpore para organizar su negocio.</li>
+    </ul>
+    <p>Esta información se utiliza para ofrecer las herramientas de organización y cálculo de la Aplicación.</p>
+
+    <h3>2.3. Datos técnicos y publicitarios</h3>
+    <p>Los servicios de terceros integrados en la Aplicación, como Google AdMob, pueden recopilar información técnica del dispositivo e identificadores relacionados con la publicidad, de acuerdo con sus propias políticas y configuraciones.</p>
+
+    <h2>3. Finalidades del tratamiento</h2>
+    <p>La información se utiliza para:</p>
+    <ul>
+      <li>Crear y administrar cuentas de usuario y autenticar el acceso.</li>
+      <li>Proporcionar las funciones de Emprende.</li>
+      <li>Permitir la organización de productos, recetas y datos comerciales.</li>
+      <li>Realizar cálculos de costos y precios de venta.</li>
+      <li>Mostrar anuncios mediante Google AdMob.</li>
+      <li>Detectar errores, mantener y mejorar el funcionamiento de la Aplicación.</li>
+      <li>Atender consultas y solicitudes de los usuarios.</li>
+    </ul>
+
+    <h2>4. Almacenamiento de la información</h2>
+    <p>La información comercial que el usuario ingresa en Emprende —por ejemplo, productos, recetas, costos y precios— se almacena localmente en el dispositivo, según el funcionamiento actual de la Aplicación. Actualmente, Emprende no ofrece sincronización automática de esa información entre distintos dispositivos.</p>
+    <p>Por este motivo, esos datos podrían perderse si el usuario desinstala la Aplicación, borra sus datos o cambia de dispositivo sin realizar previamente una copia de seguridad por sus propios medios.</p>
+    <p>Los datos de registro y autenticación, como el correo electrónico y la contraseña, son tratados por el servicio de autenticación utilizado por la Aplicación. La información correspondiente a ese proveedor debe consultarse en su documentación y política de privacidad.</p>
+
+    <h2>5. Publicidad y Google AdMob</h2>
+    <p>Emprende utiliza <strong>Google AdMob</strong>, un servicio de publicidad proporcionado por Google, para mostrar anuncios dentro de la Aplicación. En función de la configuración, la región y las opciones de consentimiento del usuario, AdMob y sus socios pueden tratar identificadores publicitarios, información del dispositivo y datos relacionados con la interacción con los anuncios, para mostrar, limitar, medir y prevenir el fraude publicitario.</p>
+    <p>Para obtener más información, se pueden consultar los siguientes recursos:</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Política de Privacidad de Google</a>.</li>
+      <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Cómo utiliza Google la información de sitios o aplicaciones que usan sus servicios</a>.</li>
+    </ul>
+    <p>Las preferencias de anuncios también pueden administrarse mediante las opciones disponibles en el dispositivo y las herramientas que Google proporcione.</p>
+
+    <h2>6. Comunicación de información a terceros</h2>
+    <p>El responsable no vende los datos personales ni la información comercial de los usuarios. Determinados datos pueden ser tratados por proveedores tecnológicos cuando sea necesario para prestar funciones de autenticación o publicidad, mantener la Aplicación o cumplir obligaciones legales.</p>
+    <p>Estos proveedores realizan el tratamiento conforme a sus propias condiciones y políticas de privacidad. La información también podrá comunicarse cuando exista una obligación legal o un requerimiento válido de una autoridad competente.</p>
+
+    <h2>7. Seguridad</h2>
+    <p>Se procura aplicar medidas técnicas y organizativas razonables para proteger la información frente a accesos no autorizados, pérdida, alteración o divulgación. Sin embargo, ningún sistema puede garantizar seguridad absoluta. Se recomienda al usuario proteger su dispositivo y mantener la confidencialidad de sus credenciales.</p>
+
+    <h2>8. Conservación y eliminación de datos</h2>
+    <p>Los datos comerciales almacenados localmente permanecen en el dispositivo hasta que el usuario los elimina o realiza una acción que provoque su pérdida, como borrar los datos de la Aplicación o desinstalarla.</p>
+    <p>Los datos asociados a la cuenta se conservan durante el tiempo necesario para prestar el servicio y cumplir las obligaciones legales aplicables. Para solicitar la eliminación de la cuenta y de los datos personales asociados, el usuario puede escribir a <a href="mailto:fedelchandia@gmail.com">fedelchandia@gmail.com</a>.</p>
+    <p>La solicitud será atendida conforme a la legislación aplicable. La eliminación de una cuenta no necesariamente borra de forma automática los datos que el usuario haya guardado localmente en su dispositivo; estos deberán eliminarse desde la Aplicación o desde la configuración del dispositivo, según corresponda.</p>
+
+    <h2>9. Derechos de los usuarios</h2>
+    <p>Conforme a la Ley 25.326 de Protección de Datos Personales de la República Argentina, los titulares pueden ejercer los derechos de acceso, rectificación, actualización y supresión de sus datos personales, de acuerdo con los requisitos y plazos establecidos por la normativa.</p>
+    <p>Para realizar una solicitud, el usuario puede escribir a <a href="mailto:fedelchandia@gmail.com">fedelchandia@gmail.com</a>.</p>
+    <p>La Agencia de Acceso a la Información Pública (AAIP) es el órgano de control de la Ley 25.326 y tiene atribuciones para atender denuncias y reclamos relacionados con la protección de datos personales.</p>
+
+    <h2>10. Privacidad de menores</h2>
+    <p>Emprende está orientada a personas que gestionan una actividad comercial y no está diseñada específicamente para menores de edad. No se busca recopilar deliberadamente datos personales de menores en forma contraria a la legislación aplicable. Si un representante legal considera que un menor proporcionó datos personales indebidamente, puede comunicarse mediante el correo indicado en esta política.</p>
+
+    <h2>11. Cambios en esta Política de Privacidad</h2>
+    <p>Esta política podrá actualizarse si cambian las funcionalidades de Emprende, los servicios de terceros utilizados o las exigencias legales. La versión vigente se publicará en esta misma página e indicará su fecha de actualización.</p>
+
+    <h2>12. Contacto</h2>
+    <div class="contact">
+      <p><strong>Emprende</strong></p>
+      <p><strong>Responsable:</strong> Federico Chandía</p>
+      <p><strong>Correo electrónico:</strong> <a href="mailto:fedelchandia@gmail.com">fedelchandia@gmail.com</a></p>
+      <p><strong>País:</strong> República Argentina</p>
+    </div>
+
+    <footer>
+      Esta Política de Privacidad corresponde a la aplicación Emprende. Última actualización: 17 de noviembre de 2026.
+    </footer>
+  </main>
+</body>
 </html>
